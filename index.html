@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Search City">
+            <button>Search</button>
+        </div>
+        <div class="loading">
+            Loading...
+        </div>
+        <div class="error">
+            City not found. Please try again.
+        </div>
+        <div class="weather-info">
+            <h2 class="city">Mumbai</h2>
+            <div class="temperature">
+                <span class="temp">--</span>
+            </div>
+            <p class="condition">Weather Condition</p>
+            <div class="weather-details">
+                <div>
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong class="humidity">--%</strong>
+                </div>
+                <div>
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <strong class="wind">--km/h</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

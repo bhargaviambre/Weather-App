@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: #dff3ff;
+    color: #123;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-container{
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+h1{
+    margin-bottom: 25px;
+    color: #1677b8;
+}
+.search-box{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.search-box input{
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+.search-box button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #1677b8;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.search-box button:hover{
+    background: #0d5c91;
+}
+.loading{
+    display: none;
+    margin: 20px 0;
+    color: #1677b8;
+    font-weight: bold;
+}
+.error{
+    display: none;
+    margin: 20px 0;
+    color: #d32f2f;
+    font-weight: bold;
+}
+.weather-info{
+    display: none;
+}
+.city{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.temperature{
+    font-size: 48px;
+    font-weight: bold;
+    color: #1677b8;
+    margin-bottom: 10px;
+}
+.condition{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.weather-details{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.weather-details div{
+    flex: 1;
+    background: #eef8fd;
+    padding: 15px;
+    border-radius: 12px;
+}
+.weather-details span{
+    font-size: 25px;
+}
+.weather-details p{
+    margin: 8px 0;
+}
+.weather-details strong{
+    color: #1677b8;
+}
+
+@media(max-width:768px){
+    .weather-container{
+        width: 85%;
+        padding: 30px;
+    }
+    h1{
+        font-size: 32px;
+    }
+}
+@media(max-width:428px){
+    .weather-container{
+        width: 92%;
+        padding: 25px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    .search-box{
+        flex-direction: column;
+    }
+    .search-box button{
+        width: 100%;
+    }
+    .temperature{
+        font-size: 42px;
+    }
+    .weather-details{
+        flex-direction: column;
+    }
+}
